@@ -12,6 +12,7 @@ function Header({ onNavigate, currentPage }: HeaderProps) {
         { name: 'Test Activity', page: 'test-activity' },
         { name: 'First Activity', page: 'first-activity' },
         { name: 'Second Activity', page: 'second-activity' },
+        { name: 'State Management', page: 'state-management' },
     ]
 
   const [accountMenuOpen, setAccountMenuOpen] = useState(false)

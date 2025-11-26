@@ -5,6 +5,7 @@ import './App.css'
 import TestActivityView from './activities/testActivity/TestActivityView'
 import FirstActivityView from './activities/FirstActivity/FirstActivityView'
 import SecondActivityView from './activities/SecondActivity/SecondActivityView'
+import StateManagementView from './activities/StateManagement/StateManagementView'
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
         return <FirstActivityView />;
       case 'second-activity':
         return <SecondActivityView />;
+      case 'state-management':
+        return <StateManagementView />;
       default:
         return <div>Welcome to the Home Page</div>;
     }
