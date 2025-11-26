@@ -32,7 +32,9 @@ function Header({ onNavigate, currentPage }: HeaderProps) {
             <ul>
                 {menuItems.map(item => (
                     <li key={item.page}>
-                        <a href={`/${item.page}`} onClick={(e) => handleNavClick(item.page, e)} className={currentPage === item.page ? "active" : ""}>
+                        <a href={`/${item.page}`} 
+                           onClick={(e) => handleNavClick(item.page, e)} 
+                           className={currentPage === item.page ? "active" : ""}>
                             {item.name}
                         </a>
                     </li>
